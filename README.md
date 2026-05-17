@@ -105,3 +105,12 @@ This plugin uses a multi-manifest structure:
 - `.claude-plugin/plugin.json` for Claude Code
 - `.codex-plugin/plugin.json` for Codex
 - shared `skills/`, `agents/`, `hooks/`, `.mcp.json`, scripts, templates, and policies
+
+## Production handoff
+
+- Production setup and UAT guide: `INSTALL.md`
+- Release readiness command:
+
+```bash
+scripts/verify_release_readiness.sh
+```
