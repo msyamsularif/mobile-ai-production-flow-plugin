@@ -84,7 +84,7 @@ Expected:
 Prompt:
 
 ```text
-Run mobile production workflow for experimental task POC implementasi live sale until Draft PR.
+Run mobile production workflow for experimental task POC implementation live sale until Draft PR.
 ```
 
 Expected:

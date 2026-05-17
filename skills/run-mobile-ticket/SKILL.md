@@ -45,14 +45,14 @@ You must not:
 
 Examples:
 
-- Jira: `GZ-1234` + `Implementasi Feature Flag` -> `feature/gz-1234-implementasi-feature-flag`
-- No Jira: `POC implementasi live sale` -> `experimental/poc-implementasi-live-sale`
+- Jira: `GZ-1234` + `Implementation Feature Flag` -> `feature/gz-1234-implementation-feature-flag`
+- No Jira: `POC implementation live sale` -> `experimental/poc-implementation-live-sale`
 
 Helper command:
 
 ```bash
-scripts/create_work_branch.sh --jira GZ-1234 --summary "Implementasi Feature Flag"
-scripts/create_work_branch.sh --summary "POC implementasi live sale"
+scripts/create_work_branch.sh --jira GZ-1234 --summary "Implementation Feature Flag"
+scripts/create_work_branch.sh --summary "POC implementation live sale"
 ```
 
 ## Stop Conditions
