@@ -1,0 +1,1 @@
+Placeholder for plugin icon. Add icon.png when publishing to a marketplace.

@@ -1,0 +1,27 @@
+{
+  "name": "mobile-ai-production-flow",
+  "version": "1.0.0",
+  "description": "Provider-compatible AI workflow for mobile app development from Jira ticket to Draft PR with Jira deep scan, Figma, BE TRD/API contract, validation loop, and human gates.",
+  "author": {
+    "name": "Muhammad Syamsul Arif",
+    "email": "syamsularif0904@gmail.com"
+  },
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
+  "hooks": "./hooks/hooks.json",
+  "interface": {
+    "displayName": "Mobile AI Production Flow",
+    "shortDescription": "Run mobile development workflow from Jira ticket to Draft PR.",
+    "longDescription": "Performs Jira deep reference discovery, Figma and BE contract research, codebase research, requirement alignment, scoped implementation, validation, manual self-test checklist, and Draft PR creation. Stops after Draft PR.",
+    "developerName": "Muhammad Syamsul Arif",
+    "category": "Developer Tools",
+    "capabilities": [
+      "Read",
+      "Write"
+    ],
+    "defaultPrompt": [
+      "Run mobile production workflow for Jira ticket VOILA-123 until Draft PR.",
+      "Handle PR review feedback for PR #123 and create a fix plan."
+    ]
+  }
+}

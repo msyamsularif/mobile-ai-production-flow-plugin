@@ -1,0 +1,9 @@
+{
+  "name": "mobile-ai-production-flow",
+  "description": "Provider-compatible AI workflow for mobile app development from Jira ticket to Draft PR with Jira deep scan, Figma, BE TRD/API contract, validation loop, and human gates.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Muhammad Syamsul Arif",
+    "email": "syamsularif0904@gmail.com"
+  }
+}

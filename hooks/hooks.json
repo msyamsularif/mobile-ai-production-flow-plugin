@@ -1,0 +1,48 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash ${CLAUDE_PLUGIN_ROOT:-${PLUGIN_ROOT:-.}}/scripts/validate_workflow_context.sh",
+            "statusMessage": "Loading Mobile AI Production Flow policies"
+          },
+          {
+            "type": "command",
+            "command": "bash ${CLAUDE_PLUGIN_ROOT:-${PLUGIN_ROOT:-.}}/scripts/ensure_work_branch_context.sh",
+            "statusMessage": "Checking working branch convention"
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "Write|Edit|MultiEdit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash ${CLAUDE_PLUGIN_ROOT:-${PLUGIN_ROOT:-.}}/scripts/ensure_draft_pr_boundary.sh",
+            "statusMessage": "Checking Draft PR automation boundary"
+          },
+          {
+            "type": "command",
+            "command": "bash ${CLAUDE_PLUGIN_ROOT:-${PLUGIN_ROOT:-.}}/scripts/ensure_work_branch_context.sh",
+            "statusMessage": "Checking working branch convention"
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash ${CLAUDE_PLUGIN_ROOT:-${PLUGIN_ROOT:-.}}/scripts/ensure_draft_pr_boundary.sh",
+            "statusMessage": "Verifying workflow stopped safely"
+          }
+        ]
+      }
+    ]
+  }
+}

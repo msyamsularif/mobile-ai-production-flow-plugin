@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "plugins": [
+    {
+      "id": "mobile-ai-production-flow@local",
+      "name": "Mobile AI Production Flow",
+      "description": "Provider-compatible AI workflow for mobile app development from Jira ticket to Draft PR.",
+      "path": ".."
+    }
+  ]
+}
