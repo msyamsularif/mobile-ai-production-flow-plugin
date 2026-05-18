@@ -4,10 +4,13 @@
     "name": "Muhammad Syamsul Arif",
     "email": "syamsularif0904@gmail.com"
   },
+  "metadata": {
+    "description": "Curated plugins for mobile AI production flow",
+    "version": "1.0.0"
+  },
   "interface": {
     "displayName": "Mobile AI Production Flow Marketplace"
   },
-  "version": "1.0.0",
   "plugins": [
     {
       "name": "mobile-ai-production-flow",

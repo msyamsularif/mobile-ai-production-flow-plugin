@@ -3,10 +3,12 @@
   "interface": {
     "displayName": "Mobile AI Production Flow Marketplace"
   },
+  "version": "1.0.0",
   "plugins": [
     {
       "name": "mobile-ai-production-flow",
       "source": "./plugins/mobile-ai-production-flow",
+      "version": "1.0.0",
       "policy": {
         "installation": "AVAILABLE",
         "authentication": "ON_INSTALL"
