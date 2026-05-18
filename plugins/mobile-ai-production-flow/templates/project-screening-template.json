@@ -1,0 +1,46 @@
+{
+  "schema_version": "1.0",
+  "project": {
+    "id": "",
+    "name": "",
+    "platforms": [],
+    "owner": ""
+  },
+  "readiness": {
+    "decision": "go",
+    "reason": "",
+    "confidence": "medium"
+  },
+  "scope": {
+    "objective": "",
+    "in_scope": [],
+    "out_of_scope": []
+  },
+  "baseline": {
+    "version": "v1",
+    "source_of_truth": {
+      "jira": [],
+      "docs": [],
+      "figma": [],
+      "api_contract": []
+    },
+    "global_definition_of_done": [],
+    "shared_constraints": [],
+    "shared_risks": []
+  },
+  "risks": [],
+  "unknowns": [],
+  "clarification_questions": [],
+  "budget": {
+    "policy": "project-baseline",
+    "estimated_input_tokens": 0,
+    "estimated_output_tokens": 0,
+    "within_budget": true,
+    "compression_applied": false,
+    "carryover_context_size": "small"
+  },
+  "next_action": {
+    "allowed_to_continue": true,
+    "next_step": "ticket_screening"
+  }
+}

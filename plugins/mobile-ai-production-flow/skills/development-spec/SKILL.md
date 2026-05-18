@@ -1,23 +1,22 @@
 ---
 name: development-spec
-description: Convert research outputs into a mobile development specification.
+description: Convert research outputs into a technical requirements document (TRD).
 ---
 
-# Development Specification
+# Technical Requirements Generation (TRD)
 
-Create a technical spec from Jira, Figma, BE contract, codebase research, and requirement alignment.
+Generate a technical requirements document from Jira, Figma, BE contract, codebase research, and requirement alignment.
 
-Include:
+Use mandatory TRD generation policy/template:
 
-- Goal
-- Scope
-- Non-goals
-- Source references
-- UI requirements
-- Backend/API requirements
-- Mobile implementation requirements
-- Edge cases
-- Acceptance Criteria mapping
-- Validation plan
+- `policies/technical-requirements-generation-rules.md`
+- `templates/technical-requirements-template.md`
+
+Apply token governance before and after TRD generation:
+
+- `policies/token-governance-rules.md`
+- `templates/context-compression-template.md`
+
+Primary output sections must follow the TRD template exactly.
 
 Do not write code in this phase.

@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1180" viewBox="0 0 1400 1180">
+  <defs>
+    <style>
+      .green { stroke: #2f9e44; fill: none; stroke-width: 4; }
+      .blue { stroke: #2b6cb0; fill: none; stroke-width: 4; }
+      .arrow { stroke: #222; fill: none; stroke-width: 4; marker-end: url(#arrowhead); }
+      .txtg { fill: #2f9e44; font-family: Arial, sans-serif; font-size: 22px; font-weight: 600; }
+      .txtb { fill: #2b6cb0; font-family: Arial, sans-serif; font-size: 22px; font-weight: 600; }
+      .title { font-size: 28px; }
+      .small { font-size: 20px; font-weight: 600; }
+    </style>
+    <marker id="arrowhead" markerWidth="12" markerHeight="8" refX="10" refY="4" orient="auto">
+      <polygon points="0 0, 12 4, 0 8" fill="#222" />
+    </marker>
+  </defs>
+
+  <rect x="30" y="30" rx="18" ry="18" width="300" height="80" class="green"/>
+  <text x="180" y="82" text-anchor="middle" class="txtg title">Human</text>
+  <line x1="180" y1="110" x2="180" y2="205" class="green"/>
+
+  <rect x="22" y="205" rx="42" ry="42" width="310" height="320" class="green"/>
+  <text x="178" y="305" text-anchor="middle" class="txtg title">Gate 1</text>
+  <text x="178" y="385" text-anchor="middle" class="txtg">Plan &amp; Ticket</text>
+  <text x="178" y="435" text-anchor="middle" class="txtg">Quality</text>
+
+  <rect x="540" y="30" rx="18" ry="18" width="320" height="80" class="blue"/>
+  <text x="700" y="82" text-anchor="middle" class="txtb title">AI Agent</text>
+  <line x1="700" y1="110" x2="700" y2="270" class="blue"/>
+  <rect x="530" y="270" rx="48" ry="48" width="340" height="200" class="blue"/>
+  <text x="700" y="355" text-anchor="middle" class="txtb title">Processing AI</text>
+  <text x="700" y="405" text-anchor="middle" class="txtb title">Agent Workflow</text>
+
+  <line x1="332" y1="365" x2="530" y2="365" class="arrow"/>
+
+  <rect x="1070" y="35" rx="18" ry="18" width="300" height="80" class="green"/>
+  <text x="1220" y="87" text-anchor="middle" class="txtg title">Human</text>
+  <line x1="1220" y1="115" x2="1220" y2="220" class="green"/>
+
+  <line x1="870" y1="365" x2="1060" y2="365" class="arrow"/>
+
+  <rect x="1060" y="220" rx="42" ry="42" width="320" height="320" class="green"/>
+  <text x="1220" y="320" text-anchor="middle" class="txtg title">Gate 2</text>
+  <text x="1220" y="410" text-anchor="middle" class="txtg">Code Review on</text>
+  <text x="1220" y="455" text-anchor="middle" class="txtg">PR Github</text>
+
+  <line x1="1220" y1="540" x2="1220" y2="620" class="green"/>
+  <rect x="1060" y="620" rx="42" ry="42" width="320" height="220" class="green"/>
+  <text x="1220" y="700" text-anchor="middle" class="txtg title">Gate 3</text>
+  <text x="1220" y="780" text-anchor="middle" class="txtg">Merge Decision</text>
+
+  <line x1="1220" y1="840" x2="1220" y2="915" class="green"/>
+  <rect x="1060" y="915" rx="42" ry="42" width="320" height="235" class="green"/>
+  <text x="1220" y="995" text-anchor="middle" class="txtg title">Gate 4</text>
+  <text x="1220" y="1075" text-anchor="middle" class="txtg">QA &amp; Releases</text>
+  <text x="1220" y="1120" text-anchor="middle" class="txtg">Sign-off</text>
+</svg>

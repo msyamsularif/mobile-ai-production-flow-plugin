@@ -1,4 +1,6 @@
-# Development Specification
+# Development Specification (Deprecated)
+
+> Deprecated: use `templates/technical-requirements-template.md` as the primary output template.
 
 ## Jira Context
 - Ticket:

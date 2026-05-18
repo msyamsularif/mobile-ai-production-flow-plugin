@@ -7,6 +7,16 @@ description: Run formatter, analyzer, linter, tests, and fix related failures.
 
 Run validation before Draft PR.
 
+Apply testing policy/template:
+
+- `policies/testing-implementation-rules.md`
+- `templates/testing-plan-template.md`
+
+Apply token governance for validation summaries:
+
+- `policies/token-governance-rules.md`
+- `templates/context-compression-template.md`
+
 Default Flutter commands:
 
 ```bash

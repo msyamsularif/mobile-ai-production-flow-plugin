@@ -11,12 +11,23 @@ Before creating Draft PR:
 
 1. Check `.github` for pull request template first.
 2. If template exists, use that template as the PR body base.
-3. Edit only PR description content area and add/adjust these sections:
-   - `Key Changes Section`
-   - `Technical Solution Section`
-   - `Impact Analysis Section` (optional by rules below)
+3. Update/add content only in description section (for example `Description`, `Description & Technical Solution`, or equivalent). Do not update any other sections.
+4. In that description section, add/adjust:
+   - `Key Changes`
+   - `Technical Solution`
+   - `Impact Analysis` (optional by rules below)
+5. If template includes `Jira Ticket` or `Jira Link`, fill with Jira ticket URL, or leave empty if unavailable.
+6. If template includes `PRD Link` or `PRD`, fill with Figma design URL, or leave empty if unavailable.
 
-Skip `Impact Analysis Section` when:
+Add `Impact Analysis` only when:
+
+- There are significant architectural changes
+- Breaking changes are introduced
+- Major performance implications exist
+- Security considerations are present
+- System-wide effects need highlighting
+
+Skip `Impact Analysis` when:
 
 - Changes are minor bug fixes
 - Updates are purely cosmetic/UI improvements
@@ -29,20 +40,11 @@ Helper command:
 scripts/detect_pr_template.sh
 ```
 
-PR body must include:
+Apply token governance for final PR description context:
 
-- Jira ticket reference
-- Parent story/subtask context
-- Figma references if any
-- BE TRD/API contract references if any
-- Requirement alignment summary
-- Implementation summary
-- Acceptance Criteria checklist
-- Validation report
-- Manual self-test checklist
-- Screenshots/videos placeholder
-- Risk areas
-- Assumptions/open questions
-- Reviewer notes
+- `policies/token-governance-rules.md`
+- `templates/context-compression-template.md`
+
+Respect existing template shape; only update the description section content.
 
 After Draft PR is created, stop.

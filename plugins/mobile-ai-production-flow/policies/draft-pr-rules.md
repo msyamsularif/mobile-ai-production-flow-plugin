@@ -5,9 +5,21 @@
 - Do not request reviewers automatically unless explicitly configured by the engineer.
 - Do not merge PR.
 - Before creating Draft PR, check `.github` for an existing PR template.
-- If PR template exists, use that template and only edit PR description content.
-- Ensure PR description contains `Key Changes Section` and `Technical Solution Section`.
-- Add `Impact Analysis Section` only when changes may have meaningful system or behavioral impact.
-- Skip `Impact Analysis Section` when changes are minor bug fixes, cosmetic/UI-only, non-significant, isolated, and non-critical.
-- Include Jira reference, requirement alignment summary, implementation summary, validation report, manual self-test checklist, risk areas, assumptions, and reviewer notes.
+- If PR template exists, use that template and update/add content only inside description section (for example `Description`, `Description & Technical Solution`, or equivalent).
+- Never modify sections outside the description section.
+- In the description section, ensure `Key Changes` and `Technical Solution` sections always exist.
+- Add `Impact Analysis` section only when:
+  - there are significant architectural changes
+  - breaking changes are introduced
+  - major performance implications exist
+  - security considerations are present
+  - system-wide effects need highlighting
+- Skip `Impact Analysis` when:
+  - changes are minor bug fixes
+  - updates are purely cosmetic/UI improvements
+  - no significant system impact exists
+  - changes are isolated and non-critical
+- If template includes `Jira Ticket` or `Jira Link`, provide Jira ticket URL; leave empty when unavailable.
+- If template includes `PRD Link` or `PRD`, provide Figma design URL; leave empty when unavailable.
+- Apply token governance with `policies/token-governance-rules.md` and compress context before writing final description when threshold is reached.
 - Stop after Draft PR creation.
