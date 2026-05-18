@@ -101,14 +101,9 @@ The bundled `.mcp.json` includes sample server entries. You still need to instal
 
 Typical required MCP/tools:
 
-- Jira
-- Git/GitHub/GitLab/Bitbucket PR
-- Shell/terminal
-- Filesystem
-- Figma (optional, recommended)
-- Docs/Confluence/Google Docs/Notion (optional)
-- GraphQL/OpenAPI contract reader (optional)
-- CI (optional)
+- Atlassian
+- GitHub
+- Figma
 
 ## Compatibility Notes
 
