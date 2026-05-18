@@ -10,7 +10,10 @@
   "plugins": [
     {
       "name": "mobile-ai-production-flow",
-      "source": "./",
+      "source": {
+        "source": "local",
+        "path": "./plugins/mobile-ai-production-flow"
+      },
       "version": "1.0.0",
       "policy": {
         "installation": "AVAILABLE",
