@@ -9,6 +9,8 @@
     "email": "syamsularif0904@gmail.com"
   },
   "license": "MIT",
+  "homepage": "https://github.com/msyamsularif/mobile-ai-production-flow-plugin",
+  "repository": "https://github.com/msyamsularif/mobile-ai-production-flow-plugin",
   "skills": "skills/",
   "agents": "agents/",
   "hooks": "hooks/hooks.json",
