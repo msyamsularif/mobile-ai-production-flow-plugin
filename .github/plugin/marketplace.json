@@ -14,10 +14,7 @@
   "plugins": [
     {
       "name": "mobile-ai-production-flow",
-      "source": {
-        "source": "local",
-        "path": "./plugins/mobile-ai-production-flow"
-      },
+      "source": "./plugins/mobile-ai-production-flow",
       "version": "1.0.0",
       "policy": {
         "installation": "AVAILABLE",
