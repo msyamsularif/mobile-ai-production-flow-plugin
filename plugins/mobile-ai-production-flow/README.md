@@ -6,7 +6,7 @@ Compatible with hosts that support plugins/skills/hooks/MCP, such as:
 
 - Claude Code
 - OpenAI Codex
-- GitHub Copilot / VS Code Agent Plugins
+- GitHub Copilot
 
 ## Workflow Boundary (Mandatory)
 
@@ -24,38 +24,13 @@ The following activities remain human-gated:
 - Merge
 - Handling PR review feedback (unless explicitly requested by the engineer)
 
-## Human Gate Model
+## Workflow Illustration
 
-![Human Gate Workflow](assets/human-gate-workflow.svg)
+![Human Gate Workflow](plugins/mobile-ai-production-flow/assets/human-gate-workflow.svg)
 
 Gate 1 happens before AI execution. Gates 2-4 are post-Draft-PR human controls.
 
-## Workflow Illustration
-
-```mermaid
-flowchart TD
-    A[Start from Jira Ticket] --> B[Create Working Branch]
-    B --> C[Project Screening]
-    C --> D[Ticket Screening]
-    D --> E[Fetch Jira Subtask + Parent Story]
-    E --> F[Deep Scan: description, comments, attachments, linked issues]
-    F --> G[Reference Discovery: Figma, API/BE docs, supporting docs]
-    G --> H[Research design + backend contract]
-    H --> I[Design Breakdown + YAGNI Gate]
-    I --> J[Deep Codebase Understanding (4-Phase)]
-    J --> K[Mobile Focused Analysis]
-    K --> L[Requirement Alignment Report]
-    L --> M[Technical Requirements Document (TRD)]
-    M --> N[Planning Options + Human Gate]
-    N --> O[Implementation Plan]
-    O --> P[Implement scoped tasks]
-    P --> Q[Validation loop]
-    Q --> R[Manual Self-Test Checklist]
-    R --> S[Create Draft PR]
-    S --> T[STOP - waiting for human review]
-```
-
-## Workflow Steps Executed by the Plugin
+## Automation Workflow Steps Executed
 
 1. Create a working branch from the currently checked out branch.
 2. Run project-level screening to establish reusable baseline context.
@@ -78,28 +53,6 @@ flowchart TD
 19. Generate the Manual Self-Test Checklist.
 20. Create Draft Pull Request.
 21. Stop.
-
-## Token Efficiency Baseline
-
-- Project screening policy: `policies/project-screening-rules.md`
-- Project screening template: `templates/project-screening-template.json`
-- Ticket screening policy: `policies/ticket-screening-rules.md`
-- Ticket screening template: `templates/ticket-screening-template.json`
-- Design breakdown policy: `policies/design-breakdown-rules.md`
-- Design breakdown template: `templates/design-breakdown-template.md`
-- Deep codebase understanding policy: `policies/deep-codebase-understanding-rules.md`
-- Deep codebase understanding template: `templates/deep-codebase-understanding-template.md`
-- Mobile-focused analysis policy: `policies/mobile-focused-analysis-rules.md`
-- Mobile-focused analysis template: `templates/mobile-focused-analysis-template.md`
-- TRD generation policy: `policies/technical-requirements-generation-rules.md`
-- TRD template: `templates/technical-requirements-template.md`
-- Planning options policy: `policies/planning-options-rules.md`
-- Planning options template: `templates/planning-options-template.md`
-- Testing implementation policy: `policies/testing-implementation-rules.md`
-- Testing plan template: `templates/testing-plan-template.md`
-- Token governance policy: `policies/token-governance-rules.md`
-- Context compression template: `templates/context-compression-template.md`
-- Purpose: keep context portable and compact across Claude, Copilot, and Codex adapters.
 
 ## Branch Naming Convention
 
