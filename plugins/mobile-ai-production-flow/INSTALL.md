@@ -96,5 +96,6 @@ Expected:
 Expected:
 
 - If `.github` PR template exists, plugin uses template as PR body base.
-- Adds `Key Changes Section` and `Technical Solution Section`.
-- `Impact Analysis Section` appears only when change impact is significant.
+- Updates content only in template description section.
+- Includes `Key Changes` and `Technical Solution`.
+- Adds `Impact Analysis` only when change impact is significant.

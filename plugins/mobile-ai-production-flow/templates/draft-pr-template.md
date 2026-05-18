@@ -1,36 +1,18 @@
-## Summary
+## Description & Technical Solution
+<!-- Describe problems, if any, clearly and concisely.
+Summarize the impact to the system.
+Please also include relevant motivation and context.
+Please include a summary of the technical solution and how it solves the problem. -->
 
-## Jira Ticket
-
-## Source References
-- Figma:
-- BE TRD/API Contract:
-
-## Requirement Alignment Summary
-
-## Changes
+### Key Changes
 - 
 
-## Acceptance Criteria Checklist
-- [ ] 
+### Technical Solution
+- 
 
-## Validation
-- [ ] Format check
-- [ ] Static analysis / analyzer
-- [ ] Linter
-- [ ] Unit tests
-- [ ] Manual self-test checklist prepared
+<!-- Optional: add `### Impact Analysis` only when significant architecture/breaking/performance/security/system-wide impact exists. -->
 
-## Manual Self-Test
-| Scenario | Expected Result | Status | Evidence |
-|---|---|---|---|
-
-## Screenshots / Videos
-
-## Risk Areas
-
-## Assumptions / Open Questions
-
-## Notes for Reviewer
-
-> This PR is created as Draft by AI workflow. Manual validation and Ready-for-Review transition are human-gated.
+### Token Governance
+- Estimated input tokens:
+- Estimated output tokens:
+- Compression applied: yes/no

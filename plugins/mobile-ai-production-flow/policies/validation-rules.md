@@ -2,6 +2,13 @@
 
 Run available validation commands before Draft PR.
 
+Also apply:
+
+- `policies/testing-implementation-rules.md`
+- `templates/testing-plan-template.md`
+- `policies/token-governance-rules.md`
+- `templates/context-compression-template.md`
+
 Default Flutter validation:
 
 ```bash
@@ -26,3 +33,4 @@ If validation fails:
 5. Stop and report blocker if same error repeats.
 
 Never claim validation passed without command evidence.
+Never claim testing complete when changed code has no test coverage evidence.
