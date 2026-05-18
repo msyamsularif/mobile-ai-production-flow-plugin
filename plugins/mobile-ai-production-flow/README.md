@@ -26,7 +26,7 @@ The following activities remain human-gated:
 
 ## Workflow Illustration
 
-![Human Gate Workflow](plugins/mobile-ai-production-flow/assets/human-gate-workflow.svg)
+![Human Gate Workflow](assets/human-gate-workflow.svg)
 
 Gate 1 happens before AI execution. Gates 2-4 are post-Draft-PR human controls.
 
