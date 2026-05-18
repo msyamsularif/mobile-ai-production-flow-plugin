@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "plugins": [
+    {
+      "id": "mobile-ai-production-flow",
+      "name": "Mobile AI Production Flow",
+      "description": "Provider-compatible AI workflow for mobile app development from Jira ticket to Draft PR with Jira deep scan, Figma, BE TRD/API contract, validation loop, and human gates.",
+      "publisher": "muhammad-syamsul-arif",
+      "version": "1.0.0",
+      "path": ".",
+      "manifest": ".codex-plugin/plugin.json",
+      "tags": [
+        "mobile",
+        "ai-workflow",
+        "jira",
+        "figma",
+        "draft-pr"
+      ]
+    }
+  ]
+}
