@@ -1,0 +1,26 @@
+{
+  "name": "mobile-ai-production-flow-marketplace",
+  "owner": {
+    "name": "Muhammad Syamsul Arif",
+    "email": "syamsularif0904@gmail.com"
+  },
+  "interface": {
+    "displayName": "Mobile AI Production Flow Marketplace"
+  },
+  "plugins": [
+    {
+      "name": "mobile-ai-production-flow",
+      "source": "./",
+      "version": "1.0.0",
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "author": {
+        "name": "Muhammad Syamsul Arif",
+        "email": "syamsularif0904@gmail.com"
+      },
+      "category": "Engineering"
+    }
+  ]
+}

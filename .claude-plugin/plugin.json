@@ -4,6 +4,9 @@
   "version": "1.0.0",
   "homepage": "https://github.com/msyamsularif/mobile-ai-production-flow-plugin",
   "repository": "https://github.com/msyamsularif/mobile-ai-production-flow-plugin",
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
+  "hooks": "./hooks/hooks.json",
   "author": {
     "name": "Muhammad Syamsul Arif",
     "email": "syamsularif0904@gmail.com"
