@@ -3,12 +3,12 @@
   "interface": {
     "displayName": "Mobile AI Production Flow Marketplace"
   },
-  "version": "1.0.0",
+  "version": "1.1.0",
   "plugins": [
     {
       "name": "mobile-ai-production-flow",
       "source": "./plugins/mobile-ai-production-flow",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "description": "Provider-compatible AI workflow for mobile app development from Jira ticket to Draft PR with Jira deep scan, Figma, BE TRD/API contract, validation loop, and human gates.",
       "policy": {
         "installation": "AVAILABLE",
