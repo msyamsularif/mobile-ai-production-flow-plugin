@@ -26,6 +26,53 @@ Release is considered ready only when all checks pass.
 
 - Endpoint: `https://api.githubcopilot.com/mcp/`
 
+## Install Plugins by AI Provider
+
+Use these official references for plugin discovery and installation flows:
+
+1. GitHub Copilot (CLI): [Plugins: Find and install](https://docs.github.com/en/copilot/how-tos/copilot-cli/customize-copilot/plugins-finding-installing)
+2. OpenAI Codex: [Build plugins](https://developers.openai.com/codex/plugins/build)
+3. Claude Code: [Discover plugins](https://code.claude.com/docs/en/discover-plugins)
+
+### GitHub Copilot CLI
+
+```bash
+copilot plugin marketplace list
+copilot plugin marketplace add OWNER/REPO
+copilot plugin install PLUGIN-NAME@MARKETPLACE-NAME
+copilot plugin list
+```
+
+### OpenAI Codex
+
+```bash
+codex plugin marketplace add owner/repo
+codex plugin marketplace add ./local-marketplace-root
+codex plugin marketplace upgrade
+```
+
+Note:
+
+- Codex plugin manifests use `.codex-plugin/plugin.json`.
+- Plugin installation and enable/disable controls are managed by Codex from its plugin directory and config.
+
+### Claude Code
+
+Run these commands in a Claude Code session:
+
+```text
+/plugin marketplace add anthropics/claude-plugins-community
+/plugin marketplace list
+/plugin install plugin-name@marketplace-name
+/plugin marketplace update marketplace-name
+```
+
+Scope notes:
+
+- `user`: install for your user across projects.
+- `project`: shared through `.claude/settings.json`.
+- `local`: only for your local repository clone.
+
 ## Claude Code
 
 Use the plugin folder as a Claude Code plugin. Claude Code reads `.claude-plugin/plugin.json` and shared components from the plugin root.

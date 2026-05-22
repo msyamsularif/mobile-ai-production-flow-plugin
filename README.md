@@ -114,6 +114,38 @@ This plugin uses a multi-manifest structure:
 - `.codex-plugin/plugin.json` for Codex
 - Shared: `skills/`, `agents/`, `hooks/`, `.mcp.json`, `scripts/`, `templates/`, `policies/`
 
+## Provider Plugin Installation Docs
+
+Use these official docs to discover and install plugins for each supported AI provider:
+
+1. GitHub Copilot (CLI): [Plugins: Find and install](https://docs.github.com/en/copilot/how-tos/copilot-cli/customize-copilot/plugins-finding-installing)
+2. OpenAI Codex: [Build plugins](https://developers.openai.com/codex/plugins/build)
+3. Claude Code: [Discover plugins](https://code.claude.com/docs/en/discover-plugins)
+
+Quick command references:
+
+```bash
+# GitHub Copilot CLI
+copilot plugin marketplace list
+copilot plugin marketplace add OWNER/REPO
+copilot plugin install PLUGIN-NAME@MARKETPLACE-NAME
+copilot plugin list
+```
+
+```bash
+# OpenAI Codex
+codex plugin marketplace add owner/repo
+codex plugin marketplace add ./local-marketplace-root
+codex plugin marketplace upgrade
+```
+
+```text
+# Claude Code (inside Claude session)
+/plugin marketplace add anthropics/claude-plugins-community
+/plugin marketplace list
+/plugin install plugin-name@marketplace-name
+```
+
 ## Production Handoff
 
 - Production setup and UAT guide: `INSTALL.md`
